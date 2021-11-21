@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Project</title>
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/design-system/2.9.4/styles/salesforce-lightning-design-system.min.css">
+      <link rel="stylesheet" type="text/css" href="Investor_Card.css">
+   </head>
+   <body>
+      <!--Header Of the Page-->
+      <header class="slds-global-header_container ">
+         <a href="#" class="slds-assistive-text slds-assistive-text_focus">Skip to Navigation</a>
+         <a href="#" class="slds-assistive-text slds-assistive-text_focus">Skip to Main Content</a>
+         <div class="slds-global-header slds-grid slds-grid_align-spread">
+            <div class="slds-global-header__item">
+               <div class="slds-global-header__logo">
+                  <span class="slds-avatar slds-avatar_circle slds-avatar_large">
+                  <img alt="Person name" src="https://cdn.icon-icons.com/icons2/2699/PNG/512/salesforce_logo_icon_170764.png" title="User avatar" />
+                  </span>
+                  <div class="topnav">
+                     <a href="#" class="active"><strong>MENU</strong></a>
+                     <div id="myLinks">
+                        <a href="#">SUMMARY</a>
+                        <a href="#">Account Summary</a>
+                        <a href="#">INVESTMENT</a>
+                        <a href="#">My Investments</a>
+                        <a href="#">Investor List</a>
+                        <a href="#">DOCUMENTS</a>
+                        <a href="#">My Document</a>
+                        <a href="#">Delegate Document</a>
+                        <a href="#">TRANSCTIONS</a>
+                        <a href="#">My Transctions</a>
+                        <a href="#">DELEGATE</a>
+                        <a href="#">My Delegate</a>
+                     </div>
+                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                     <i class="fa fa-bars"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="slds-global-header__item">
+               <ul class="slds-global-actions">
+                  <li class="slds-global-actions__item">
+                     <div class="slds-global-actions__favorites slds-dropdown-trigger slds-dropdown-trigger_click">
+                        <button class="slds-button mobile_view">DashBoard</button>
+                     </div>
+                  </li>
+                  <li class="slds-global-actions__item">
+                     <div class="slds-dropdown-trigger slds-dropdown-trigger_click mobile_view">
+                        <p>|</p>
+                     </div>
+                  </li>
+                  <li class="slds-global-actions__item">
+                     <div class="slds-dropdown-trigger slds-dropdown-trigger_click">
+                        <button class="slds-button slds-button_icon slds-button_icon slds-button_icon-container slds-button_icon-small slds-global-actions__notifications slds-global-actions__item-action mobile_view"  aria-live="assertive" aria-atomic="true">
+                        <img alt="Person name" src="images/notification.png" title="User avatar" />
+                        <span class="slds-assistive-text mobile_view">no new notifications</span>
+                        </button>
+                        <span aria-hidden="true" class="slds-notification-badge">0</span>
+                     </div>
+                  </li>
+                  <li class="slds-global-actions__item">
+                     <div class="slds-dropdown-trigger slds-dropdown-trigger_click mobile_view">
+                        <p>|</p>
+                     </div>
+                  </li>
+                  <li class="slds-global-actions__item">
+                     <div class="slds-dropdown-trigger slds-dropdown-trigger_click mobile_view">
+                        <button class="slds-button slds-global-actions__avatar slds-global-actions__item-action" title="person name" aria-haspopup="true">
+                        <span class="slds-avatar slds-avatar_circle slds-avatar_medium">
+                        <img alt="Person name" src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png" title="User avatar" />
+                        </span>
+                        </button>
+                     </div>
+                  </li>
+                  <li class="slds-global-actions__item">
+                     <div class="slds-dropdown-trigger slds-dropdown-trigger_click mobile_view">
+                        <p>Avi Prasad</p>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </header>
+      <div class="slds-grid slds-wrap" style="padding-top: 50px;">
+         <!--Sidebar Of the Page-->
+         <div class="slds-col slds-size_2-of-12 Sidebardata">
+            <div class="demo-only" style="width:240px ">
+               <nav class="slds-nav-vertical" aria-label="Sub page">
+                  <div class="slds-nav-vertical__section">
+                     <ul aria-describedby="entity-header">
+                        <li class="slds-nav-vertical__item">
+                           <a href="#" class="slds-nav-vertical__action captial">SUMMARY</a>
+                        </li>
+                        <li class="slds-nav-vertical__item">
+                           <a href="#" class="slds-nav-vertical__action">Account Summary</a>
+                        </li>
+                        <li class="slds-nav-vertical__item">
+                           <a href="#" class="slds-nav-vertical__action captial">INVESTMENT</a>
+                        </li>
+                        <li class="slds-nav-vertical__item">
+                           <a href="#" class="slds-nav-vertical__action ">My Investments</a>
+                        </li>
+                        <li class="slds-nav-vertical__item">
+                           <a href="#" class="slds-nav-vertical__action ">Investor List</a>
+                        </li>
+                        <li class="slds-nav-vertical__item">
+                           <a href="#" class="slds-nav-vertical__action captial">DOCUMENTS</a>
+                        </li>
+                        <li class="slds-nav-vertical__item">
+                           <a href="#" class="slds-nav-vertical__action">My Document</a>
+                        </li>
+                        <li class="slds-nav-vertical__item">
+                           <a href="#" class="slds-nav-vertical__action">Delegate Document</a>
+                        </li>
+                        <li class="slds-nav-vertical__item">
+                           <a href="#" class="slds-nav-vertical__action captial">TRANSCTIONS</a>
+                        </li>
+                        <li class="slds-nav-vertical__item">
+                           <a href="#" class="slds-nav-vertical__action">My Transctions</a>
+                        </li>
+                        <li class="slds-nav-vertical__item">
+                           <a href="#" class="slds-nav-vertical__action captial">DELEGATE</a>
+                        </li>
+                        <li class="slds-nav-vertical__item">
+                           <a href="#" class="slds-nav-vertical__action">My Delegate</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="slds-nav-vertical__section slds-align_absolute-center sidebarbottom">
+                     <p>@2018 No Copyright Issue</p>
+                  </div>
+               </nav>
+            </div>
+         </div>
+         <!--Main Of the Page-->
+         <div class="slds-col slds-size_10-of-12 main-head slds-align_absolute-center">
+            <div class="slds-col slds-size_2-of-12 slds-text-heading_large slds-align_absolute-center mobile_view">
+               <p><strong>Investor List</strong></p>
+            </div>
+            <div class="slds-col slds-size_3-of-12 slds-text-heading_small slds-align_absolute-center slds-button_neutral mobile_view">
+               <div class="Search">
+                  <p>Search by Name or Email..</p>
+               </div>
+               <div class="img">
+                  <img src="images/zoom.svg"/>
+               </div>
+            </div>
+            <div class="slds-col slds-size_1.5-of-12 slds-text-heading_small slds-align_absolute-center slds-button_neutral mobile_view">
+               <div class="both">
+                  <p>Both</p>
+               </div>
+               <div class="img">
+                  <img src="images/small-triangle-down.svg"/>
+               </div>
+            </div>
+            <div class="slds-col slds-size_1.5-of-12 slds-text-heading_small slds-align_absolute-center slds-button_neutral mobile_view">
+               <div class="all">
+                  <p>ALL</p>
+               </div>
+               <div class="img">
+                  <img src="images/small-triangle-down.svg"/>
+               </div>
+            </div>
+            <div class="slds-col slds-size_2-of-12 slds-text-heading_small slds-align_absolute-center mobile_view">
+               <a href="Investor_Card.html"><button class="slds-button slds-button_neutral">
+               <img src="images/grid-interface.svg"/>
+               </button></a>
+               <a href="Investor_table.html"><button class="slds-button slds-button_neutral">
+               <img src="images/menu-6.svg"/>
+               </button></a>
+            </div>
+            <div class="slds-col slds-size_2-of-12 slds-text-heading_small slds-align_absolute-center mobile_view">
+               <button class="slds-button slds-button_neutral">
+               <img src="images/menu-6.svg"/>
+               </button>
+            </div>
+            <article class="slds-card">
+               <a href="#"></a><img src="images/menu-5.png"  />
+               <div class="slds-card__header ">
+                  <img src="https://images.unsplash.com/photo-1607592706726-d032acbd08cd?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3NDExMDMx&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400"/>
+               </div>
+               <div class="slds-text-heading_medium slds-align_absolute-center">
+                  Deven Maxwell
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center slds-p-bottom_large shade">
+                  ajhvxf@xyz.com
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center shade">
+                  Total Contributions
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center slds-p-bottom-large">
+                  &dollar; 729,243
+               </div>
+               <footer class="slds-card__footer">
+                  <a class="slds-card__footer-action" href="#">View Details
+                  <span class="slds-assistive-text">Accounts</span>
+                  </a>
+               </footer>
+            </article>
+            <article class="slds-card">
+               <a href="#"></a><img src="images/menu-5.png"  />
+               <div class="slds-card__header ">
+                  <img src="https://images.unsplash.com/photo-1525181737312-adca155347de?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3MzMyNDg2&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400"  />
+               </div>
+               <div class="slds-text-heading_medium slds-align_absolute-center">
+                  Leonel Mcmillan
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center slds-p-bottom_large shade">
+                  sjbxf@xyz.com
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center shade">
+                  Total Contributions
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center slds-p-bottom-large">
+                  &dollar; 651,272
+               </div>
+               <footer class="slds-card__footer">
+                  <a class="slds-card__footer-action" href="#">View Details
+                  <span class="slds-assistive-text">Accounts</span>
+                  </a>
+               </footer>
+            </article>
+            <article class="slds-card">
+               <a href="#"></a><img src="images/menu-5.png"  />
+               <div class="slds-card__header ">
+                  <img src="https://images.unsplash.com/photo-1531078215167-91fcfe45b39e?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3NDExODc3&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400"/>
+               </div>
+               <div class="slds-text-heading_medium slds-align_absolute-center">
+                  Raiden Phelps
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center slds-p-bottom_large shade">
+                  aajsgf@xyz.com
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center shade">
+                  Total Contributions
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center slds-p-bottom-large">
+                  &dollar; 274,243
+               </div>
+               <footer class="slds-card__footer">
+                  <a class="slds-card__footer-action" href="#">View Details
+                  <span class="slds-assistive-text">Accounts</span>
+                  </a>
+               </footer>
+            </article>
+            <article class="slds-card">
+               <a href="#"></a><img src="images/menu-5.png"  />
+               <div class="slds-card__header ">
+                  <img src="https://images.unsplash.com/photo-1595211877493-41a4e5f236b3?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3NDExMTA3&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" />
+               </div>
+               <div class="slds-text-heading_medium slds-align_absolute-center">
+                  Jaron Gray
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center slds-p-bottom_large shade">
+                  ksjhg@xyz.com
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center shade">
+                  Total Contributions
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center slds-p-bottom-large">
+                  &dollar; 921,247
+               </div>
+               <footer class="slds-card__footer">
+                  <a class="slds-card__footer-action" href="#">View Details
+                  <span class="slds-assistive-text">Accounts</span>
+                  </a>
+               </footer>
+            </article>
+            <article class="slds-card">
+               <a href="#"></a><img src="images/menu-5.png"  />
+               <div class="slds-card__header ">
+                  <img src="https://images.unsplash.com/photo-1605369572399-05d8d64a0f6e?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3NDExMjAx&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400"/>
+               </div>
+               <div class="slds-text-heading_medium slds-align_absolute-center">
+                  Mireya Shelton
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center slds-p-bottom_large shade">
+                  jagef@xyz.com
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center shade">
+                  Total Contributions
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center slds-p-bottom-large">
+                  &dollar; 729,248
+               </div>
+               <footer class="slds-card__footer">
+                  <a class="slds-card__footer-action" href="#">View Details
+                  <span class="slds-assistive-text">Accounts</span>
+                  </a>
+               </footer>
+            </article>
+            <article class="slds-card">
+               <a href="#"></a><img src="images/menu-5.png"  />
+               <div class="slds-card__header ">
+                  <img src="https://images.unsplash.com/photo-1603678574895-d0139907feb0?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3NDExMjkx&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400"/>
+               </div>
+               <div class="slds-text-heading_medium slds-align_absolute-center">
+                  Naima Paul
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center slds-p-bottom_large shade">
+                  magsns@xyz.com
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center shade">
+                  Total Contributions
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center slds-p-bottom-large">
+                  &dollar; 415,283
+               </div>
+               <footer class="slds-card__footer">
+                  <a class="slds-card__footer-action" href="#">View Details
+                  <span class="slds-assistive-text">Accounts</span>
+                  </a>
+               </footer>
+            </article>
+            <article class="slds-card">
+               <a href="#"></a><img src="images/menu-5.png"  />
+               <div class="slds-card__header ">
+                  <img src="https://images.unsplash.com/photo-1525829974901-c61a1bb51afb?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3NDExMzMz&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400"/>
+               </div>
+               <div class="slds-text-heading_medium slds-align_absolute-center">
+                  Laney Marsh
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center slds-p-bottom_large shade">
+                  jsghx@xyz.com
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center shade">
+                  Total Contributions
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center slds-p-bottom-large">
+                  &dollar; 116,223
+               </div>
+               <footer class="slds-card__footer">
+                  <a class="slds-card__footer-action" href="#">View Details
+                  <span class="slds-assistive-text">Accounts</span>
+                  </a>
+               </footer>
+            </article>
+            <article class="slds-card">
+               <a href="#"></a><img src="images/menu-5.png"  />
+               <div class="slds-card__header ">
+                  <img src="https://images.unsplash.com/photo-1558203728-00f45181dd84?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3NDExMzgw&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400"/>
+               </div>
+               <div class="slds-text-heading_medium slds-align_absolute-center">
+                  Marely Barber
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center slds-p-bottom_large shade">
+                  ahsj@xyz.com
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center shade">
+                  Total Contributions
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center slds-p-bottom-large">
+                  &dollar; 982,193
+               </div>
+               <footer class="slds-card__footer">
+                  <a class="slds-card__footer-action" href="#">View Details
+                  <span class="slds-assistive-text">Accounts</span>
+                  </a>
+               </footer>
+            </article>
+            <article class="slds-card">
+               <a href="#"></a><img src="images/menu-5.png"  />
+               <div class="slds-card__header ">
+                  <img src="https://images.unsplash.com/photo-1543949806-2c9935e6aa78?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3NDExNjE5&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400"/>
+               </div>
+               <div class="slds-text-heading_medium slds-align_absolute-center">
+                  Yandel Cannon
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center slds-p-bottom_large shade">
+                  kjahgf@xyz.com
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center shade">
+                  Total Contributions
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center slds-p-bottom-large">
+                  &dollar; 876,272
+               </div>
+               <footer class="slds-card__footer">
+                  <a class="slds-card__footer-action" href="#">View Details
+                  <span class="slds-assistive-text">Accounts</span>
+                  </a>
+               </footer>
+            </article>
+            <article class="slds-card">
+               <a href="#"></a><img src="images/menu-5.png"  />
+               <div class="slds-card__header ">
+                  <img src="https://images.unsplash.com/photo-1528228728175-149802236c04?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3NDExNjY4&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400"/>
+               </div>
+               <div class="slds-text-heading_medium slds-align_absolute-center">
+                  Abel Warren
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center slds-p-bottom_large shade">
+                  kjhs@xyz.com
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center shade">
+                  Total Contributions
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center slds-p-bottom-large">
+                  &dollar; 631,281
+               </div>
+               <footer class="slds-card__footer">
+                  <a class="slds-card__footer-action" href="#">View Details
+                  <span class="slds-assistive-text">Accounts</span>
+                  </a>
+               </footer>
+            </article>
+            <article class="slds-card">
+               <a href="#"></a><img src="images/menu-5.png"  />
+               <div class="slds-card__header ">
+                  <img src="https://images.unsplash.com/photo-1542123000-53b05f943818?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3NDExNzEz&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400"/>
+               </div>
+               <div class="slds-text-heading_medium slds-align_absolute-center">
+                  Iliana Owens
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center slds-p-bottom_large shade">
+                  jsdgh@xyz.com
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center shade">
+                  Total Contributions
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center slds-p-bottom-large">
+                  &dollar; 531,243
+               </div>
+               <footer class="slds-card__footer">
+                  <a class="slds-card__footer-action" href="#">View Details
+                  <span class="slds-assistive-text">Accounts</span>
+                  </a>
+               </footer>
+            </article>
+            <article class="slds-card">
+               <a href="#"></a><img src="images/menu-5.png"  />
+               <div class="slds-card__header ">
+                  <img src="https://images.unsplash.com/photo-1530268729831-4b0b9e170218?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3NDExNzUz&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400"/>
+               </div>
+               <div class="slds-text-heading_medium slds-align_absolute-center">
+                  Leroy Hill
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center slds-p-bottom_large shade">
+                  abcf@xyz.com
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center shade">
+                  Total Contributions
+               </div>
+               <div class="slds-text-heading_small slds-align_absolute-center slds-p-bottom-large">
+                  &dollar; 821,243
+               </div>
+               <footer class="slds-card__footer">
+                  <a class="slds-card__footer-action" href="#">View Details
+                  <span class="slds-assistive-text">Accounts</span>
+                  </a>
+               </footer>
+            </article>
+         </div>
+      </div>
+      <!--Script -->
+      <script>
+         function myFunction() {
+           var x = document.getElementById("myLinks");
+           if (x.style.display === "block") {
+             x.style.display = "none";
+           } else {
+             x.style.display = "block";
+           }
+         }
+      </script>
+   </body>
+</html>

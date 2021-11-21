@@ -1,0 +1,60 @@
+html,body{
+    background-color: white;
+}
+.Sidebardata{
+    padding-top: 20px;
+    background-color: #E7F6FF;
+    height: 100vh; 
+}
+.captial{
+    color: blue;
+    font-size: 12px;
+}
+.slds-nav-vertical__action:hover{
+    text-decoration: underline blue;   
+}
+.captial:hover{
+    text-decoration: underline blue;
+    color:blue;   
+}
+.slds-size_10-of-12{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sidebarbottom{
+    position: relative;
+    top: 160px;
+    right: 20px;
+}
+.main-head{
+    margin-top: 20px;
+    
+}
+.img{
+    margin-left: 10px;
+}
+.main-body2{
+    margin: 40px;
+    margin-top: 20px;
+    background-color: #FFE6E8;
+}
+
+.slds-truncate img{
+    border-radius: 50%;
+    height: 40px;
+}
+@media screen and (min-width:360px){
+    .topnav{
+        display: none;
+    }
+}
+
+@media screen and (max-width:360px){
+.Sidebardata{
+    display: none;
+}
+.mobile_view{
+    display: none;
+}
+
+}
